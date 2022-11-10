@@ -90,12 +90,3 @@ def pt_rate(player, stack):
             return [19, 13, 9, 6, 4, 2]
         else:
             return [21, 15, 11, 7, 4, 2]
-
-# 所持ptからレベルを決定する関数
-def pt_level(pt):
-    border = [10, 25, 50, 100, 200, 300, 500]
-    lv = 0
-    for i in range(7):
-        if pt >= border[i]:
-            lv += 1
-    return lv
